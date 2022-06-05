@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        #scrollToTopBtn {
+            width: 80px;
+            height: 80px;
+            background: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 50%;
+            color: beige;
+            font-size: 40px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            transition: background 0.25s;
+
+            outline: blue;
+            border: none;
+            cursor: pointer;
+        }
+
+        #scrollToTopBtn:active {
+            background: gray;
+        }
+
+        #homeBtn {
+            width: 80px;
+            height: 80px;
+            background: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 50%;
+            color: beige;
+            font-size: 40px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+            position: fixed;
+            right: 20px;
+            bottom: 110px;
+            transition: background 0.25s;
+
+            outline: blue;
+            border: none;
+            cursor: pointer;
+        }
+
+        #homeBtn:active {
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container is-fullhd mb-6">
+            <p class="title is-1 has-text-white is-family-monospace box has-background-black mb-6 has-text-centered">
+                About Me</p>
+            <div class="tile is-ancestor mt-6">
+                <div class="tile is-parent">
+
+                    <div class="tile is-child is-4 has-text-centered">
+
+                        <img class="" src="prof_pic.png" style="width: 75%; height:auto">
+
+                    </div>
+                    <div class="tile is-child box">
+
+                        <p class="title is-2 has-text-black is-family-monospace mb-6 has-text-centered">Justine Khalel
+                            A. Rubiano</p>
+                        <p class="subtitle is-4 has-text-black has-text-justified is-family-monospace"
+                            style="text-indent: 50px;line-height: 2;"> I am a 4th year student at Malayan Colleges
+                            Laguna taking Information Technology. I am interested in web development, both the front-end
+                            and back-end side of it. I intend to specialize in web development and I'm currently
+                            training to be a web developer in the foreseable future.</p>
+
+                        <button class="button is-outlined is-black" id="githubBtn">
+                            <span class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </span>
+                            <span class="is-family-monospace">GitHub</span>
+                        </button>
+
+                        <button class="button is-outlined is-black" id="linkedinBtn">
+                            <span class="icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </span>
+                            <span class="is-family-monospace">LinkedIn</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section">
+        <div class="container is-fullhd">
+            <p class="title is-2 has-text-white is-family-monospace box has-background-black mb-5"><i
+                    class="fa-solid fa-graduation-cap"></i> Education</p>
+
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <!---------------------------------------------------------------------->
+                    <div class="tile is-child">
+                        <p class="subtitle is-3 has-text-black is-family-monospace has-text-weight-bold">Malayan
+                            Colleges Laguna</p>
+                        <ul style="list-style:none" class="mb-6">
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">B.S in Information Technology
+                                    (June 2018 - present)</p>
+                            </li>
+                        </ul>
+                        <p class="subtitle is-3 has-text-black is-family-monospace has-text-weight-bold">University of
+                            Perpetual Help System Jonelta</p>
+                        <ul style="list-style:none" class="mb-6">
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">TVL - Information and
+                                    Communication Technology (July 2016 - April 2018)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---------------------------------------------------------------------->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-fullhd">
+            <p class="title is-2 has-text-white is-family-monospace box has-background-black mb-5"><i
+                    class="fa-solid fa-user"></i> Skills</p>
+
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <!---------------------------------------------------------------------->
+                    <div class="tile is-child is-4">
+                        <p class="subtitle is-3 has-text-black is-family-monospace has-text-weight-bold"><i
+                                class="fa-solid fa-code"></i> Languages</p>
+                        <ul style="list-style:none" class="mb-6">
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">HTML</p>
+                            </li>
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">CSS</p>
+                            </li>
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">JavaScript</p>
+                            </li>
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">C#</p>
+                            </li>
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">Python</p>
+                            </li>
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">PHP</p>
+                            </li>
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">SQL</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tile is-child is-4">
+                        <p class="subtitle is-3 has-text-black is-family-monospace has-text-weight-bold"><i
+                                class="fa-solid fa-gear"></i> Tools</p>
+                        <ul style="list-style:none" class="mb-6">
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">Bulma CSS</p>
+                            </li>
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">Git</p>
+                            </li>
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">GitHub</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tile is-child is-4">
+                        <p class="subtitle is-3 has-text-black is-family-monospace has-text-weight-bold"><i
+                                class="fa-solid fa-terminal"></i> Platforms</p>
+                        <ul style="list-style:none" class="mb-6">
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">Windows</p>
+                            </li>
+                            <li>
+                                <p class="subtitle is-5 has-text-dark is-family-monospace">Linux</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---------------------------------------------------------------------->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-fullhd">
+            <p class="title is-2 has-text-white is-family-monospace box has-background-black mb-5"><i
+                    class="fa-solid fa-certificate"></i> Webinars Attended</p>
+
+            <div class="tile is-ancestor is-vertical">
+                <div class="tile is-parent">
+                    <!---------------------------------------------------------------------->
+                    <div class="tile is-child has-text-centered">
+
+                        <img src="webinar_001.png">
+
+                    </div>
+                    <div class="tile is-child has-text-centered">
+
+                        <img src="webinar_002.png">
+
+                    </div>
+                    <div class="tile is-child has-text-centered">
+
+                        <img src="webinar_003.png">
+
+                    </div>
+                    <!---------------------------------------------------------------------->
+                </div>
+
+                <div class="tile is-parent">
+                    <!---------------------------------------------------------------------->
+                    <div class="tile is-child has-text-centered">
+
+                        <img src="webinar_004.png">
+
+                    </div>
+                    <div class="tile is-child has-text-centered">
+
+                        <img src="webinar_005.jpg">
+
+                    </div>
+                    <div class="tile is-child has-text-centered">
+
+                        <img src="webinar_006.png">
+
+                    </div>
+                    <!---------------------------------------------------------------------->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p class="is-family-monospace">
+                <strong>khalelrubiano@gmail.com</strong>
+                <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+                <button id="homeBtn"><i class="fa-solid fa-house"></i></button>
+            </p>
+        </div>
+    </footer>
+</body>
+<script src="about.js"></script>
+
+</html>

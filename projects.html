@@ -73,7 +73,11 @@
         .mySlides1,
         .mySlides2,
         .mySlides3,
-        .mySlides4 {
+        .mySlides4,
+        .mySlides5,
+        .mySlides6,
+        .mySlides7,
+        .mySlides8 {
             display: none
         }
 
@@ -83,7 +87,7 @@
 
         /* Slideshow container */
         .slideshow-container {
-            max-width: 1000px;
+            
             position: relative;
             margin: auto;
         }
@@ -136,7 +140,9 @@
                             System</p>
                         <p class="has-text-black block has-text-justified is-family-monospace"
                             style="text-indent: 50px;line-height: 2;">
-                            An IoT course project that is capable of monitoring water parameters such as temperature and humidity of an aquarium. It is meant to be a simple demonstration of an IoT system which consists of sensors, microcontrollers, web and mobile application.
+                            An IoT course project that is capable of monitoring water parameters such as temperature and
+                            humidity of an aquarium. It is meant to be a simple demonstration of an IoT system which
+                            consists of sensors, microcontrollers, web and mobile application.
                         </p>
 
                     </div>
@@ -147,20 +153,44 @@
                     <!---------------------------------------------------------------------->
                     <div class="slideshow-container">
                         <div class="mySlides1">
-                            <img src="project_001.jpg" style="width:100%">
+                            <img src="project_001.jpg" style="width:100%" id="img_1">
                         </div>
 
                         <div class="mySlides1">
-                            <img src="project_002.jpg" style="width:100%">
+                            <img src="project_002.jpg" style="width:100%" id="img_2">
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                     </div>
+
                     <!---------------------------------------------------------------------->
                 </div>
             </div>
         </div>
+
+        <div class="modal" id="mySlides5_modal">
+            <div class="modal-background">
+                <div class="slideshow-container" style="max-height: 75%; min-height: 50%; max-width: 1500px; margin-top: 3%;">
+                    <div class="mySlides5">
+                        <img src="project_001.jpg">
+                    </div>
+
+                    <div class="mySlides5">
+                        <img src="project_002.jpg">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+                </div>
+            </div>
+            <div class="modal-content">
+                <!-- Any other Bulma elements you want -->
+
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="mySlides5_close()"></button>
+        </div>
+
     </section>
 
     <section class="section">
@@ -173,19 +203,19 @@
 
                     <div class="slideshow-container">
                         <div class="mySlides2">
-                            <img src="project_003.jpg" style="width:100%">
+                            <img src="project_003.jpg" style="width:100%" id="img_3">
                         </div>
 
                         <div class="mySlides2">
-                            <img src="project_004.jpg" style="width:100%">
+                            <img src="project_004.jpg" style="width:100%" id="img_4">
                         </div>
 
                         <div class="mySlides2">
-                            <img src="project_005.jpg" style="width:100%">
+                            <img src="project_005.jpg" style="width:100%" id="img_5">
                         </div>
 
                         <div class="mySlides2">
-                            <img src="project_006.jpg" style="width:100%">
+                            <img src="project_006.jpg" style="width:100%" id="img_6">
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
@@ -202,7 +232,11 @@
                             Project</p>
                         <p class="has-text-black block has-text-justified is-family-monospace"
                             style="text-indent: 50px;line-height: 2;">
-                            An ongoing capstone project that is to be used by transport services companies to aid in their business process. It will consist of different modules designed to handle shipping, billing, payroll, records, vehicles, and employees. The project will consist of a web and mobile application and it will also produce a prototype gps tracker that will be used to track vehicles during deliveries.
+                            An ongoing capstone project that is to be used by transport services companies to aid in
+                            their business process. It will consist of different modules designed to handle shipping,
+                            billing, payroll, records, vehicles, and employees. The project will consist of a web and
+                            mobile application and it will also produce a prototype gps tracker that will be used to
+                            track vehicles during deliveries.
                         </p>
 
                     </div>
@@ -210,6 +244,33 @@
                     <!---------------------------------------------------------------------->
                 </div>
             </div>
+        </div>
+        <div class="modal" id="mySlides6_modal">
+            <div class="modal-background">
+                <div class="slideshow-container" style="max-height: 75%; min-height: 50%; max-width: 1500px; margin-top: 3%;">
+                    <div class="mySlides6">
+                        <img src="project_003.jpg">
+                    </div>
+
+                    <div class="mySlides6">
+                        <img src="project_004.jpg">
+                    </div>
+                    <div class="mySlides6">
+                        <img src="project_005.jpg">
+                    </div>
+                    <div class="mySlides6">
+                        <img src="project_006.jpg">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+                </div>
+            </div>
+            <div class="modal-content">
+                <!-- Any other Bulma elements you want -->
+
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="mySlides6_close()"></button>
         </div>
     </section>
 
@@ -221,10 +282,13 @@
                     <!---------------------------------------------------------------------->
                     <div class="tile is-child has-text-centered">
 
-                        <p class="title is-3 has-text-white is-family-monospace box has-background-black">Pixel Clothing</p>
+                        <p class="title is-3 has-text-white is-family-monospace box has-background-black">Pixel Clothing
+                        </p>
                         <p class="has-text-black block has-text-justified is-family-monospace"
                             style="text-indent: 50px;line-height: 2;">
-                            A project for a web systems course. It is a traditional store website that has a product page for t-shirts and account system that allows users to add products to their cart. It was a demonstration of web technologies we have learned during the course.
+                            A project for a web systems course. It is a traditional store website that has a product
+                            page for t-shirts and account system that allows users to add products to their cart. It was
+                            a demonstration of web technologies we have learned during the course.
                         </p>
 
                     </div>
@@ -235,15 +299,15 @@
                     <!---------------------------------------------------------------------->
                     <div class="slideshow-container">
                         <div class="mySlides3">
-                            <img src="project_007.png" style="width:100%">
+                            <img src="project_007.png" style="width:100%" id="img_7">
                         </div>
 
                         <div class="mySlides3">
-                            <img src="project_008.png" style="width:100%">
+                            <img src="project_008.png" style="width:100%" id="img_8">
                         </div>
 
                         <div class="mySlides3">
-                            <img src="project_009.png" style="width:100%">
+                            <img src="project_009.png" style="width:100%" id="img_9">
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
@@ -253,6 +317,30 @@
                 </div>
             </div>
         </div>
+        <div class="modal" id="mySlides7_modal">
+            <div class="modal-background">
+                <div class="slideshow-container" style="max-height: 75%; min-height: 50%; max-width: 1500px; margin-top: 3%;">
+                    <div class="mySlides7">
+                        <img src="project_007.png">
+                    </div>
+
+                    <div class="mySlides7">
+                        <img src="project_008.png">
+                    </div>
+                    <div class="mySlides7">
+                        <img src="project_009.png">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+                </div>
+            </div>
+            <div class="modal-content">
+                <!-- Any other Bulma elements you want -->
+
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="mySlides7_close()"></button>
+        </div>
     </section>
     <section class="section">
         <div class="container is-fullhd">
@@ -264,23 +352,23 @@
 
                     <div class="slideshow-container">
                         <div class="mySlides4">
-                            <img src="project_010.png" style="width:100%">
+                            <img src="project_010.png" style="width:100%" id="img_10">
                         </div>
 
                         <div class="mySlides4">
-                            <img src="project_011.png" style="width:100%">
+                            <img src="project_011.png" style="width:100%" id="img_11">
                         </div>
 
                         <div class="mySlides4">
-                            <img src="project_012.png" style="width:100%">
+                            <img src="project_012.png" style="width:100%" id="img_12">
                         </div>
 
                         <div class="mySlides4">
-                            <img src="project_013.png" style="width:100%">
+                            <img src="project_013.png" style="width:100%" id="img_13">
                         </div>
 
-                        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                        <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
                     </div>
                     <!---------------------------------------------------------------------->
                 </div>
@@ -289,10 +377,14 @@
                     <!---------------------------------------------------------------------->
                     <div class="tile is-child has-text-centered">
 
-                        <p class="title is-3 has-text-white is-family-monospace box has-background-black">RNH Realty & Management Website</p>
+                        <p class="title is-3 has-text-white is-family-monospace box has-background-black">RNH Realty &
+                            Management Website</p>
                         <p class="has-text-black block has-text-justified is-family-monospace"
                             style="text-indent: 50px;line-height: 2;">
-                            A course project that is a product website for company. This website is only a minor part of the actual project that was submitted and it is only a mock-up of a full system and has no actual functionalities, only the front-end side of the website was made. The account system and chatbot is also non-functional.
+                            A course project that is a product website for company. This website is only a minor part of
+                            the actual project that was submitted and it is only a mock-up of a full system and has no
+                            actual functionalities, only the front-end side of the website was made. The account system
+                            and chatbot is also non-functional.
                         </p>
 
                     </div>
@@ -300,6 +392,33 @@
                     <!---------------------------------------------------------------------->
                 </div>
             </div>
+        </div>
+        <div class="modal" id="mySlides8_modal">
+            <div class="modal-background">
+                <div class="slideshow-container" style="max-height: 75%; min-height: 50%; max-width: 1500px; margin-top: 3%;">
+                    <div class="mySlides8">
+                        <img src="project_010.png">
+                    </div>
+
+                    <div class="mySlides8">
+                        <img src="project_011.png">
+                    </div>
+                    <div class="mySlides8">
+                        <img src="project_012.png">
+                    </div>
+                    <div class="mySlides8">
+                        <img src="project_013.png">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
+                </div>
+            </div>
+            <div class="modal-content">
+                <!-- Any other Bulma elements you want -->
+
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="mySlides8_close()"></button>
         </div>
     </section>
     <!--FOOTER-->
